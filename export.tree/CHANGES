@@ -1,0 +1,6 @@
+1.0.1 2022-07-18
+  - raw data is included
+  - the events timeline in segmented data must be ignored as these are inherited from rawdata
+  - code for experiment in eprime is included
+1.0.0 2021-08-24
+  - Initial Dataset with 20 participants
