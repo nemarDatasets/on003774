@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Music Listening- Genre EEG dataset (MUSIN-G)",
+  "description": "This dataset comprises electroencephalography (EEG) recordings from 20 Indian participants listening to 12 songs spanning diverse genres, from Indian Classical to Goth Rock. Participants rated their familiarity and enjoyment of each song on a 5-point scale following passive listening. The dataset provides neurophysiological measures of music perception and aesthetic response across different musical genres.",
+  "methods_description": "EEG was recorded while participants listened to 12 songs of different genres presented via speakers. Each session began with a single beep cueing participants to close their eyes, followed by song presentation. After each song, a double beep signaled participants to open their eyes and rate familiarity and enjoyment on a 5-point scale (1 = most familiar/enjoyable, 5 = least familiar/enjoyable).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,39 +16,6 @@
     "Dhananjay Sonawane": {},
     "Derek Lomas": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds003774.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on003774",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003774",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".gitattributes",
-    ".json",
-    ".md",
-    ".set",
-    ".tsv"
-  ],
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 20 Indian participants listening to 12 songs spanning diverse musical genres, from Indian Classical to Goth Rock. Participants rated their familiarity and enjoyment of each song on a 5-point scale following passive listening. The dataset provides a neurophysiological perspective on music genre perception and subjective musical preferences across culturally diverse musical styles.",
-  "methods_description": "EEG was recorded while participants listened to 12 songs of different genres presented via speakers. Each trial began with a single beep cueing participants to close their eyes, followed by song presentation. After each song, a double beep signaled participants to open their eyes and rate familiarity and enjoyment on a 5-point scale (1 = most familiar/enjoyable, 5 = least familiar/enjoyable).",
   "keywords": [
     {
       "term": "EEG"
@@ -58,35 +27,43 @@
       "term": "genre classification"
     },
     {
-      "term": "music listening"
+      "term": "aesthetic response"
     },
     {
-      "term": "subjective preference"
-    },
-    {
-      "term": "Indian music"
-    },
-    {
-      "term": "passive listening"
-    },
-    {
-      "term": "cultural neuroscience"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Music",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D009146"
-    },
-    {
-      "term": "Auditory Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
+      "term": "neurophysiology"
     }
   ],
-  "source_hash": "c302c3428d2b444cb66ff7ed575a8c9787dfba601bf51995643effb49a98f1a0"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on003774",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003774",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003774.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "10.9 GB (243 files)"
+  ],
+  "formats": [
+    ".gitattributes",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "b85441fb1a5a7d5a133b5932adb5340679cfd68041d73fa97b8ef2eb5d1e2fa5"
 }
