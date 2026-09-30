@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Music Listening- Genre EEG dataset (MUSIN-G)",
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 20 Indian participants listening to 12 songs spanning diverse genres, from Indian Classical to Goth Rock. Participants rated their familiarity and enjoyment of each song on a 5-point scale following passive listening. The dataset provides neurophysiological measures of music perception and aesthetic response across different musical genres.",
-  "methods_description": "EEG was recorded while participants listened to 12 songs of different genres presented via speakers. Each session began with a single beep cueing participants to close their eyes, followed by song presentation. After each song, a double beep signaled participants to open their eyes and rate familiarity and enjoyment on a 5-point scale (1 = most familiar/enjoyable, 5 = least familiar/enjoyable).",
+  "description": "This dataset contains electroencephalography (EEG) recordings from 20 Indian participants who listened to 12 songs spanning genres from Indian Classical to Goth Rock. After each song, participants rated their familiarity with and enjoyment of it on a 5-point scale. The data support research on music perception, genre, and affective responses to music.",
+  "methods_description": "Participants closed their eyes on hearing a single beep, and each song was played through speakers. A double beep after each song prompted them to open their eyes and rate familiarity and enjoyment on a scale of 1 (most) to 5 (least). Each session corresponds to one song.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,16 +21,21 @@
       "term": "EEG"
     },
     {
-      "term": "music perception"
+      "term": "Music",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009146"
     },
     {
-      "term": "genre classification"
+      "term": "music listening"
     },
     {
-      "term": "aesthetic response"
+      "term": "genre"
     },
     {
-      "term": "neurophysiology"
+      "term": "familiarity"
+    },
+    {
+      "term": "enjoyment"
     }
   ],
   "related_identifiers": [
@@ -40,14 +45,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003774",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003774.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003774",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -55,7 +60,7 @@
     "eeg"
   ],
   "sizes": [
-    "10.9 GB (243 files)"
+    "10.11 GB (243 files)"
   ],
   "formats": [
     ".gitattributes",
